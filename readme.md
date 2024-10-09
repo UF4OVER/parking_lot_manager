@@ -16,3 +16,16 @@
 |-ui.py  # 界面服务层
 |-ui.ui  # 原始界面
 ```
+# ui界面展示
+## 1.出场入场界面
+![img.png](readimg/img.png)
+## 2.查询界面
+![img.png](readimg/img2.png)
+## 3.停车位界面
+![img.png](readimg/img3.png)
+## 4.数据分析界面
+![img.png](readimg/img4.png)
+## 5.设置界面
+![img.png](readimg/img5.png)
+## 6.管理员登录界面
+![img.png](readimg/img6.png)
