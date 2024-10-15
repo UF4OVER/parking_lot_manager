@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
         MainWindow.setMinimumSize(QtCore.QSize(1400, 800))
         MainWindow.setMaximumSize(QtCore.QSize(1407, 800))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("pic/navi_png/vps主机.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("C:/Users/33974/.designer/backup/pic/navi_png/vps主机.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -34,159 +34,156 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.pushButton_4 = QtWidgets.QPushButton(self.widget)
         self.pushButton_4.setStyleSheet("QPushButton {\n"
-                                        "    background-color: rgba(167, 162, 157,100);\n"
-                                        "    border: none; /* 无边框 */\n"
-                                        "    padding: 10px 20px; /* 内边距 */\n"
-                                        "    text-align: center;\n"
-                                        "    text-decoration: none;\n"
-                                        "    font: 16pt \"黑体\";\n"
-                                        "    margin: 4px 2px;\n"
-                                        "    cursor: pointer;\n"
-                                        "    border-radius: 10px; /* 圆角 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                        "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 16pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("pic/op_png/mtiIcon-caozuo-fuzhi-solid.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("C:/Users/33974/.designer/backup/pic/op_png/mtiIcon-caozuo-fuzhi-solid.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_4.setIcon(icon1)
         self.pushButton_4.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_4.setObjectName("pushButton_4")
         self.verticalLayout_2.addWidget(self.pushButton_4)
         self.pushButton_6 = QtWidgets.QPushButton(self.widget)
         self.pushButton_6.setStyleSheet("QPushButton {\n"
-                                        "    background-color: rgba(167, 162, 157,100);\n"
-                                        "    border: none; /* 无边框 */\n"
-                                        "    padding: 10px 20px; /* 内边距 */\n"
-                                        "    text-align: center;\n"
-                                        "    text-decoration: none;\n"
-                                        "    font: 16pt \"黑体\";\n"
-                                        "    margin: 4px 2px;\n"
-                                        "    cursor: pointer;\n"
-                                        "    border-radius: 10px; /* 圆角 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                        "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 16pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("pic/op_png/ques.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("C:/Users/33974/.designer/backup/pic/op_png/ques.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_6.setIcon(icon2)
         self.pushButton_6.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_6.setObjectName("pushButton_6")
         self.verticalLayout_2.addWidget(self.pushButton_6)
         self.pushButton_10 = QtWidgets.QPushButton(self.widget)
         self.pushButton_10.setStyleSheet("QPushButton {\n"
-                                         "    background-color: rgba(167, 162, 157,100);\n"
-                                         "    border: none; /* 无边框 */\n"
-                                         "    padding: 10px 20px; /* 内边距 */\n"
-                                         "    text-align: center;\n"
-                                         "    text-decoration: none;\n"
-                                         "    font: 16pt \"黑体\";\n"
-                                         "    margin: 4px 2px;\n"
-                                         "    cursor: pointer;\n"
-                                         "    border-radius: 10px; /* 圆角 */\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:hover {\n"
-                                         "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:pressed {\n"
-                                         "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                         "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 16pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("pic/op_png/mtiIcon-caozuo-bianji／xiugai.png"), QtGui.QIcon.Normal,
-                        QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap("C:/Users/33974/.designer/backup/pic/op_png/mtiIcon-caozuo-bianji／xiugai.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_10.setIcon(icon3)
         self.pushButton_10.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_10.setObjectName("pushButton_10")
         self.verticalLayout_2.addWidget(self.pushButton_10)
         self.pushButton_5 = QtWidgets.QPushButton(self.widget)
         self.pushButton_5.setStyleSheet("QPushButton {\n"
-                                        "    background-color: rgba(167, 162, 157,100);\n"
-                                        "    border: none; /* 无边框 */\n"
-                                        "    padding: 10px 20px; /* 内边距 */\n"
-                                        "    text-align: center;\n"
-                                        "    text-decoration: none;\n"
-                                        "    font: 16pt \"黑体\";\n"
-                                        "    margin: 4px 2px;\n"
-                                        "    cursor: pointer;\n"
-                                        "    border-radius: 10px; /* 圆角 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                        "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 16pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("pic/op_png/mtiIcon-caozuo-pizhuxinxi-solid.png"), QtGui.QIcon.Normal,
-                        QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap("C:/Users/33974/.designer/backup/pic/op_png/mtiIcon-caozuo-pizhuxinxi-solid.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_5.setIcon(icon4)
         self.pushButton_5.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_5.setObjectName("pushButton_5")
         self.verticalLayout_2.addWidget(self.pushButton_5)
         self.pushButton_2 = QtWidgets.QPushButton(self.widget)
         self.pushButton_2.setStyleSheet("QPushButton {\n"
-                                        "    background-color: rgba(167, 162, 157,100);\n"
-                                        "    border: none; /* 无边框 */\n"
-                                        "    padding: 10px 20px; /* 内边距 */\n"
-                                        "    text-align: center;\n"
-                                        "    text-decoration: none;\n"
-                                        "    font: 16pt \"黑体\";\n"
-                                        "    margin: 4px 2px;\n"
-                                        "    cursor: pointer;\n"
-                                        "    border-radius: 10px; /* 圆角 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                        "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 16pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("pic/op_png/mtiIcon-caozuo-shezhi-solid.png"), QtGui.QIcon.Normal,
-                        QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap("C:/Users/33974/.designer/backup/pic/op_png/mtiIcon-caozuo-shezhi-solid.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_2.setIcon(icon5)
         self.pushButton_2.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_2.setObjectName("pushButton_2")
         self.verticalLayout_2.addWidget(self.pushButton_2)
         self.pushButton = QtWidgets.QPushButton(self.widget)
         self.pushButton.setStyleSheet("QPushButton {\n"
-                                      "    background-color: rgba(167, 162, 157,100);\n"
-                                      "    border: none; /* 无边框 */\n"
-                                      "    padding: 10px 20px; /* 内边距 */\n"
-                                      "    text-align: center;\n"
-                                      "    text-decoration: none;\n"
-                                      "    font: 16pt \"黑体\";\n"
-                                      "    margin: 4px 2px;\n"
-                                      "    cursor: pointer;\n"
-                                      "    border-radius: 10px; /* 圆角 */\n"
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:hover {\n"
-                                      "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                      "}\n"
-                                      "\n"
-                                      "QPushButton:pressed {\n"
-                                      "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                      "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 16pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap("pic/navi_png/icon-initiate.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon6.addPixmap(QtGui.QPixmap("C:/Users/33974/.designer/backup/pic/navi_png/icon-initiate.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton.setIcon(icon6)
         self.pushButton.setIconSize(QtCore.QSize(40, 40))
         self.pushButton.setObjectName("pushButton")
@@ -213,47 +210,46 @@ class Ui_MainWindow(object):
         self.gridLayout_2.addWidget(self.label, 0, 0, 1, 1)
         self.lineEdit = QtWidgets.QLineEdit(self.in_or_out)
         self.lineEdit.setStyleSheet("QWidget {\n"
-                                    "    background-color: rgba(229, 229, 229, 180); \n"
-                                    "    border: 1px solid #ccc; /* 边框 */\n"
-                                    "    border-radius: 10px; /* 圆角半径 */\n"
-                                    "    padding: 10px; /* 内边距 */\n"
-                                     
-                                    "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 10px; /* 内边距 */\n"
+"    font: 12pt \"AcadEref\";\n"
+"}")
         self.lineEdit.setObjectName("lineEdit")
         self.gridLayout_2.addWidget(self.lineEdit, 0, 1, 1, 1)
         self.pushButton_3 = QtWidgets.QPushButton(self.in_or_out)
         self.pushButton_3.setStyleSheet("QPushButton {\n"
-                                        "    background-color: rgba(167, 162, 157,100);\n"
-                                        "    border: none; /* 无边框 */\n"
-                                        "    padding: 10px 20px; /* 内边距 */\n"
-                                        "    text-align: center;\n"
-                                        "    text-decoration: none;\n"
-                                        "    font: 16pt \"黑体\";\n"
-                                        "    margin: 4px 2px;\n"
-                                        "    cursor: pointer;\n"
-                                        "    border-radius: 10px; /* 圆角 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                        "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 16pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap("pic/op_png/mtiIcon-caozuo-you2-solid.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon7.addPixmap(QtGui.QPixmap("C:/Users/33974/.designer/backup/pic/op_png/mtiIcon-caozuo-you2-solid.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_3.setIcon(icon7)
         self.pushButton_3.setObjectName("pushButton_3")
         self.gridLayout_2.addWidget(self.pushButton_3, 0, 2, 1, 1)
         self.textBrowser = QtWidgets.QTextBrowser(self.in_or_out)
         self.textBrowser.setStyleSheet("QWidget {\n"
-                                       "    background-color: rgba(229, 229, 229, 180); \n"
-                                       "    border: 1px solid #ccc; /* 边框 */\n"
-                                       "    border-radius: 10px; /* 圆角半径 */\n"
-                                       "    padding: 10px; /* 内边距 */\n"
-                                       "    font: 75 14pt \"Microsoft YaHei \";\n"
-                                       "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 10px; /* 内边距 */\n"
+"}")
         self.textBrowser.setObjectName("textBrowser")
         self.gridLayout_2.addWidget(self.textBrowser, 1, 0, 1, 3)
         self.gridLayout_3.addLayout(self.gridLayout_2, 0, 0, 1, 1)
@@ -265,47 +261,46 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.label_2, 0, 0, 1, 1)
         self.pushButton_7 = QtWidgets.QPushButton(self.in_or_out)
         self.pushButton_7.setStyleSheet("QPushButton {\n"
-                                        "    background-color: rgba(167, 162, 157,100);\n"
-                                        "    border: none; /* 无边框 */\n"
-                                        "    padding: 10px 20px; /* 内边距 */\n"
-                                        "    text-align: center;\n"
-                                        "    text-decoration: none;\n"
-                                        "    font: 16pt \"黑体\";\n"
-                                        "    margin: 4px 2px;\n"
-                                        "    cursor: pointer;\n"
-                                        "    border-radius: 10px; /* 圆角 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                        "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 16pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap("pic/op_png/mtiIcon-caozuo-zuo2-solid.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon8.addPixmap(QtGui.QPixmap("C:/Users/33974/.designer/backup/pic/op_png/mtiIcon-caozuo-zuo2-solid.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_7.setIcon(icon8)
         self.pushButton_7.setObjectName("pushButton_7")
         self.gridLayout.addWidget(self.pushButton_7, 0, 2, 1, 1)
         self.lineEdit_2 = QtWidgets.QLineEdit(self.in_or_out)
         self.lineEdit_2.setStyleSheet("QWidget {\n"
-                                      "    background-color: rgba(229, 229, 229, 180); \n"
-                                      "    border: 1px solid #ccc; /* 边框 */\n"
-                                      "    border-radius: 10px; /* 圆角半径 */\n"
-                                      "    padding: 10px; /* 内边距 */\n"
-                                       
-                                      "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 10px; /* 内边距 */\n"
+"    font: 12pt \"AcadEref\";\n"
+"}")
         self.lineEdit_2.setObjectName("lineEdit_2")
         self.gridLayout.addWidget(self.lineEdit_2, 0, 1, 1, 1)
         self.textBrowser_2 = QtWidgets.QTextBrowser(self.in_or_out)
         self.textBrowser_2.setStyleSheet("QWidget {\n"
-                                         "    background-color: rgba(229, 229, 229, 180); \n"
-                                         "    border: 1px solid #ccc; /* 边框 */\n"
-                                         "    border-radius: 10px; /* 圆角半径 */\n"
-                                         "    padding: 10px; /* 内边距 */\n"
-                                         "    font: 75 14pt \"Microsoft YaHei \";\n"
-                                         "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 10px; /* 内边距 */\n"
+"}")
         self.textBrowser_2.setObjectName("textBrowser_2")
         self.gridLayout.addWidget(self.textBrowser_2, 1, 0, 1, 3)
         self.gridLayout.setRowStretch(0, 1)
@@ -316,11 +311,11 @@ class Ui_MainWindow(object):
         self.label_3 = QtWidgets.QLabel(self.widget_3)
         self.label_3.setGeometry(QtCore.QRect(80, 120, 400, 400))
         self.label_3.setStyleSheet("QWidget {\n"
-                                   "   background-color: rgba(250, 229, 229, 180); \n"
-                                   "    border: 1px solid #ccc; /* 边框 */\n"
-                                   "    border-radius: 10px; /* 圆角半径 */\n"
-                                   "    padding: 10px; /* 内边距 */\n"
-                                   "}")
+"   background-color: rgba(250, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 10px; /* 内边距 */\n"
+"}")
         self.label_3.setText("")
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(self.widget_3)
@@ -331,26 +326,26 @@ class Ui_MainWindow(object):
         self.pushButton_8 = QtWidgets.QPushButton(self.widget_3)
         self.pushButton_8.setGeometry(QtCore.QRect(140, 540, 271, 51))
         self.pushButton_8.setStyleSheet("QPushButton {\n"
-                                        "    background-color: rgba(167, 162, 157,100);\n"
-                                        "    border: none; /* 无边框 */\n"
-                                        "    padding: 10px 20px; /* 内边距 */\n"
-                                        "    text-align: center;\n"
-                                        "    text-decoration: none;\n"
-                                        "    font: 10pt \"黑体\";\n"
-                                        "    margin: 4px 2px;\n"
-                                        "    cursor: pointer;\n"
-                                        "    border-radius: 10px; /* 圆角 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                        "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 10pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         icon9 = QtGui.QIcon()
-        icon9.addPixmap(QtGui.QPixmap("pic/op_png/referh.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon9.addPixmap(QtGui.QPixmap("C:/Users/33974/.designer/backup/pic/op_png/referh.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_8.setIcon(icon9)
         self.pushButton_8.setObjectName("pushButton_8")
         self.gridLayout_3.addWidget(self.widget_3, 0, 1, 2, 1)
@@ -372,12 +367,12 @@ class Ui_MainWindow(object):
         self.comboBox_9 = QtWidgets.QComboBox(self.setting)
         self.comboBox_9.setGeometry(QtCore.QRect(50, 110, 98, 38))
         self.comboBox_9.setStyleSheet("QWidget {\n"
-                                      "    background-color: rgba(229, 229, 229, 180); \n"
-                                      "    border: 1px solid #ccc; /* 边框 */\n"
-                                      "    border-radius: 10px; /* 圆角半径 */\n"
-                                      "    padding: 5px; /* 内边距 */\n"
-                                     
-                                      "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font: 14pt \"AcadEref\";\n"
+"}")
         self.comboBox_9.setObjectName("comboBox_9")
         self.comboBox_9.addItem("")
         self.comboBox_9.addItem("")
@@ -386,12 +381,12 @@ class Ui_MainWindow(object):
         self.comboBox_10 = QtWidgets.QComboBox(self.setting)
         self.comboBox_10.setGeometry(QtCore.QRect(200, 110, 131, 38))
         self.comboBox_10.setStyleSheet("QWidget {\n"
-                                       "    background-color: rgba(229, 229, 229, 180); \n"
-                                       "    border: 1px solid #ccc; /* 边框 */\n"
-                                       "    border-radius: 10px; /* 圆角半径 */\n"
-                                       "    padding: 5px; /* 内边距 */\n"
-                                      
-                                       "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font: 14pt \"AcadEref\";\n"
+"}")
         self.comboBox_10.setObjectName("comboBox_10")
         self.comboBox_10.addItem("")
         self.comboBox_10.addItem("")
@@ -403,12 +398,12 @@ class Ui_MainWindow(object):
         self.gridLayout_5.setObjectName("gridLayout_5")
         self.comboBox_2 = QtWidgets.QComboBox(self.data)
         self.comboBox_2.setStyleSheet("QWidget {\n"
-                                      "    background-color: rgba(229, 229, 229, 180); \n"
-                                      "    border: 1px solid #ccc; /* 边框 */\n"
-                                      "    border-radius: 10px; /* 圆角半径 */\n"
-                                      "    padding: 5px; /* 内边距 */\n"
-                                     
-                                      "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font: 14pt \"AcadEref\";\n"
+"}")
         self.comboBox_2.setObjectName("comboBox_2")
         self.comboBox_2.addItem("")
         self.comboBox_2.addItem("")
@@ -416,127 +411,128 @@ class Ui_MainWindow(object):
         self.gridLayout_5.addWidget(self.comboBox_2, 0, 0, 1, 1)
         self.comboBox = QtWidgets.QComboBox(self.data)
         self.comboBox.setStyleSheet("QWidget {\n"
-                                    "    background-color: rgba(229, 229, 229, 180); \n"
-                                    "    border: 1px solid #ccc; /* 边框 */\n"
-                                    "    border-radius: 10px; /* 圆角半径 */\n"
-                                    "    padding: 5px; /* 内边距 */\n"
-                                   
-                                    "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font: 14pt \"AcadEref\";\n"
+"}")
         self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.gridLayout_5.addWidget(self.comboBox, 0, 1, 1, 1)
         self.pushButton_11 = QtWidgets.QPushButton(self.data)
         self.pushButton_11.setStyleSheet("QPushButton {\n"
-                                         "    background-color: rgba(167, 162, 157,100);\n"
-                                         "    border: none; /* 无边框 */\n"
-                                         "    padding: 10px 20px; /* 内边距 */\n"
-                                         "    text-align: center;\n"
-                                         "    text-decoration: none;\n"
-                                         "    font: 12pt \"黑体\";\n"
-                                         "    margin: 4px 2px;\n"
-                                         "    cursor: pointer;\n"
-                                         "    border-radius: 10px; /* 圆角 */\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:hover {\n"
-                                         "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:pressed {\n"
-                                         "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                         "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 12pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         self.pushButton_11.setObjectName("pushButton_11")
         self.gridLayout_5.addWidget(self.pushButton_11, 0, 3, 1, 1)
         self.pushButton_12 = QtWidgets.QPushButton(self.data)
         self.pushButton_12.setStyleSheet("QPushButton {\n"
-                                         "    background-color: rgba(167, 162, 157,100);\n"
-                                         "    border: none; /* 无边框 */\n"
-                                         "    padding: 10px 20px; /* 内边距 */\n"
-                                         "    text-align: center;\n"
-                                         "    text-decoration: none;\n"
-                                         "    font: 12pt \"黑体\";\n"
-                                         "    margin: 4px 2px;\n"
-                                         "    cursor: pointer;\n"
-                                         "    border-radius: 10px; /* 圆角 */\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:hover {\n"
-                                         "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:pressed {\n"
-                                         "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                         "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 12pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         icon10 = QtGui.QIcon()
-        icon10.addPixmap(QtGui.QPixmap("pic/op_png/mtiIcon-caozuo-xiazai2.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon10.addPixmap(QtGui.QPixmap("C:/Users/33974/.designer/backup/pic/op_png/mtiIcon-caozuo-xiazai2.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_12.setIcon(icon10)
         self.pushButton_12.setObjectName("pushButton_12")
         self.gridLayout_5.addWidget(self.pushButton_12, 0, 4, 1, 1)
         self.dateTimeEdit_2 = QtWidgets.QDateTimeEdit(self.data)
         self.dateTimeEdit_2.setStyleSheet("QWidget {\n"
-                                          "    background-color: rgba(229, 229, 229, 180); \n"
-                                          "    border: 1px solid #ccc; /* 边框 */\n"
-                                          "    border-radius: 10px; /* 圆角半径 */\n"
-                                          "    padding: 5px; /* 内边距 */\n"
-                                         
-                                          "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font: 14pt \"AcadEref\";\n"
+"}")
         self.dateTimeEdit_2.setObjectName("dateTimeEdit_2")
         self.gridLayout_5.addWidget(self.dateTimeEdit_2, 1, 3, 1, 2)
         self.calendarWidget = QtWidgets.QCalendarWidget(self.data)
         self.calendarWidget.setStyleSheet("QCalendarWidget {\n"
-                                          "    background-color: #ffffff; /* 白色背景 */\n"
-                                          "    color: #333333; /* 文字颜色 */\n"
-                                          "    alternate-background-color: #f0f0f0; /* 交替行背景颜色 */\n"
-                                          "    selection-background-color: #4AAA50; /* 选中日期背景颜色 */\n"
-                                          "    selection-color: white; /* 选中日期文字颜色 */\n"
-                                          "    font-size: 14px; /* 字体大小 */\n"
-                                          "    border: 1px solid #cccccc; /* 边框 */\n"
-                                          "    border-radius: 5px; /* 圆角 */\n"
-                                          "}\n"
-                                          "\n"
-                                          "QCalendarWidget QToolButton {\n"
-                                          "    background-color: #ffffff; /* 工具按钮背景颜色 */\n"
-                                          "    color: #333333; /* 工具按钮文字颜色 */\n"
-                                          "    border: none; /* 无边框 */\n"
-                                          "    padding: 5px; /* 内边距 */\n"
-                                          "    font-size: 14px; /* 字体大小 */\n"
-                                          "}\n"
-                                          "\n"
-                                          "QCalendarWidget QToolButton::menu-button {\n"
-                                          "    subcontrol-origin: padding;\n"
-                                          "    subcontrol-position: top right;\n"
-                                          "    width: 20px;\n"
-                                          "    border-left-width: 1px;\n"
-                                          "    border-left-style: solid;\n"
-                                          "    border-left-color: #cccccc;\n"
-                                          "    border-top-right-radius: 5px;\n"
-                                          "    border-bottom-right-radius: 5px;\n"
-                                          "    background-color: #ffffff;\n"
-                                          "}\n"
-                                          "\n"
-                                          "QCalendarWidget QToolButton::menu-button:hover {\n"
-                                          "    background-color: #f0f0f0; /* 鼠标悬停时的颜色 */\n"
-                                          "}\n"
-                                          "\n"
-                                          "QCalendarWidget QWidget {\n"
-                                          "    background-color: #ffffff; /* 子部件背景颜色 */\n"
-                                          "    color: #333333; /* 子部件文字颜色 */\n"
-                                          "    border: none; /* 无边框 */\n"
-                                          "    padding: 5px; /* 内边距 */\n"
-                                          "    font-size: 14px; /* 字体大小 */\n"
-                                          "}\n"
-                                          "\n"
-                                          "QCalendarWidget QTableView {\n"
-                                          "    background-color: #ffffff; /* 表格背景颜色 */\n"
-                                          "    color: #333333; /* 表格文字颜色 */\n"
-                                          "    gridline-color: #cccccc; /* 网格线颜色 */\n"
-                                          "    selection-background-color: #4CAF50; /* 选中项背景颜色 */\n"
-                                          "    selection-color: white; /* 选中项文字颜色 */\n"
-                                          "    font-size: 14px; /* 字体大小 */\n"
-                                          "    border: 1px solid #cccccc; /* 边框 */\n"
-                                          "    border-radius: 5px; /* 圆角 */\n"
-                                          "}")
+"    background-color: #ffffff; /* 白色背景 */\n"
+"    color: #333333; /* 文字颜色 */\n"
+"    alternate-background-color: #f0f0f0; /* 交替行背景颜色 */\n"
+"    selection-background-color: #4AAA50; /* 选中日期背景颜色 */\n"
+"    selection-color: white; /* 选中日期文字颜色 */\n"
+"    font-size: 14px; /* 字体大小 */\n"
+"    border: 1px solid #cccccc; /* 边框 */\n"
+"    border-radius: 5px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QCalendarWidget QToolButton {\n"
+"    background-color: #ffffff; /* 工具按钮背景颜色 */\n"
+"    color: #333333; /* 工具按钮文字颜色 */\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font-size: 14px; /* 字体大小 */\n"
+"}\n"
+"\n"
+"QCalendarWidget QToolButton::menu-button {\n"
+"    subcontrol-origin: padding;\n"
+"    subcontrol-position: top right;\n"
+"    width: 20px;\n"
+"    border-left-width: 1px;\n"
+"    border-left-style: solid;\n"
+"    border-left-color: #cccccc;\n"
+"    border-top-right-radius: 5px;\n"
+"    border-bottom-right-radius: 5px;\n"
+"    background-color: #ffffff;\n"
+"}\n"
+"\n"
+"QCalendarWidget QToolButton::menu-button:hover {\n"
+"    background-color: #f0f0f0; /* 鼠标悬停时的颜色 */\n"
+"}\n"
+"\n"
+"QCalendarWidget QWidget {\n"
+"    background-color: #ffffff; /* 子部件背景颜色 */\n"
+"    color: #333333; /* 子部件文字颜色 */\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font-size: 14px; /* 字体大小 */\n"
+"}\n"
+"\n"
+"QCalendarWidget QTableView {\n"
+"    background-color: #ffffff; /* 表格背景颜色 */\n"
+"    color: #333333; /* 表格文字颜色 */\n"
+"    gridline-color: #cccccc; /* 网格线颜色 */\n"
+"    selection-background-color: #4CAF50; /* 选中项背景颜色 */\n"
+"    selection-color: white; /* 选中项文字颜色 */\n"
+"    font-size: 14px; /* 字体大小 */\n"
+"    border: 1px solid #cccccc; /* 边框 */\n"
+"    border-radius: 5px; /* 圆角 */\n"
+"}")
         self.calendarWidget.setGridVisible(False)
         self.calendarWidget.setSelectionMode(QtWidgets.QCalendarWidget.SingleSelection)
         self.calendarWidget.setHorizontalHeaderFormat(QtWidgets.QCalendarWidget.ShortDayNames)
@@ -555,12 +551,12 @@ class Ui_MainWindow(object):
         self.gridLayout_5.addWidget(self.widget_4, 0, 5, 3, 1)
         self.dateTimeEdit = QtWidgets.QDateTimeEdit(self.data)
         self.dateTimeEdit.setStyleSheet("QWidget {\n"
-                                        "   background-color: rgba(229, 229, 229, 180); \n"
-                                        "    border: 1px solid #ccc; /* 边框 */\n"
-                                        "    border-radius: 10px; /* 圆角半径 */\n"
-                                        "    padding: 5px; /* 内边距 */\n"
-                                       
-                                        "}")
+"   background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font: 14pt \"AcadEref\";\n"
+"}")
         self.dateTimeEdit.setObjectName("dateTimeEdit")
         self.gridLayout_5.addWidget(self.dateTimeEdit, 1, 0, 1, 2)
         self.gridLayout_6 = QtWidgets.QGridLayout()
@@ -570,12 +566,12 @@ class Ui_MainWindow(object):
         self.gridLayout_6.addWidget(self.label_8, 1, 0, 1, 1)
         self.comboBox_4 = QtWidgets.QComboBox(self.data)
         self.comboBox_4.setStyleSheet("QWidget {\n"
-                                      "    background-color: rgba(229, 229, 229, 180); \n"
-                                      "    border: 1px solid #ccc; /* 边框 */\n"
-                                      "    border-radius: 10px; /* 圆角半径 */\n"
-                                      "    padding: 5px; /* 内边距 */\n"
-                                     
-                                      "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font: 14pt \"AcadEref\";\n"
+"}")
         self.comboBox_4.setObjectName("comboBox_4")
         self.gridLayout_6.addWidget(self.comboBox_4, 1, 1, 1, 1)
         self.label_7 = QtWidgets.QLabel(self.data)
@@ -583,15 +579,25 @@ class Ui_MainWindow(object):
         self.gridLayout_6.addWidget(self.label_7, 0, 0, 1, 1)
         self.comboBox_3 = QtWidgets.QComboBox(self.data)
         self.comboBox_3.setStyleSheet("QWidget {\n"
-                                      "    background-color: rgba(229, 229, 229, 180); \n"
-                                      "    border: 1px solid #ccc; /* 边框 */\n"
-                                      "    border-radius: 10px; /* 圆角半径 */\n"
-                                      "    padding: 5px; /* 内边距 */\n"
-                                     
-                                      "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font: 14pt \"AcadEref\";\n"
+"}")
         self.comboBox_3.setEditable(False)
         self.comboBox_3.setIconSize(QtCore.QSize(20, 20))
         self.comboBox_3.setObjectName("comboBox_3")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
         self.gridLayout_6.addWidget(self.comboBox_3, 0, 1, 1, 1)
         self.label_9 = QtWidgets.QLabel(self.data)
         self.label_9.setObjectName("label_9")
@@ -601,22 +607,25 @@ class Ui_MainWindow(object):
         self.gridLayout_6.addWidget(self.label_10, 0, 2, 1, 1)
         self.comboBox_5 = QtWidgets.QComboBox(self.data)
         self.comboBox_5.setStyleSheet("QWidget {\n"
-                                      "    background-color: rgba(229, 229, 229, 180); \n"
-                                      "    border: 1px solid #ccc; /* 边框 */\n"
-                                      "    border-radius: 10px; /* 圆角半径 */\n"
-                                      "    padding: 5px; /* 内边距 */\n"
-        
-                                      "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font: 14pt \"AcadEref\";\n"
+"}")
         self.comboBox_5.setObjectName("comboBox_5")
+        self.comboBox_5.addItem("")
+        self.comboBox_5.addItem("")
+        self.comboBox_5.addItem("")
         self.gridLayout_6.addWidget(self.comboBox_5, 2, 1, 1, 1)
         self.comboBox_6 = QtWidgets.QComboBox(self.data)
         self.comboBox_6.setStyleSheet("QWidget {\n"
-                                      "    background-color: rgba(229, 229, 229, 180); \n"
-                                      "    border: 1px solid #ccc; /* 边框 */\n"
-                                      "    border-radius: 10px; /* 圆角半径 */\n"
-                                      "    padding: 5px; /* 内边距 */\n"
-                                     
-                                      "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font: 14pt \"AcadEref\";\n"
+"}")
         self.comboBox_6.setObjectName("comboBox_6")
         self.gridLayout_6.addWidget(self.comboBox_6, 0, 3, 1, 1)
         self.label_11 = QtWidgets.QLabel(self.data)
@@ -627,29 +636,29 @@ class Ui_MainWindow(object):
         self.gridLayout_6.addWidget(self.label_12, 2, 2, 1, 1)
         self.comboBox_7 = QtWidgets.QComboBox(self.data)
         self.comboBox_7.setStyleSheet("QWidget {\n"
-                                      "    background-color: rgba(229, 229, 229, 180); \n"
-                                      "    border: 1px solid #ccc; /* 边框 */\n"
-                                      "    border-radius: 10px; /* 圆角半径 */\n"
-                                      "    padding: 5px; /* 内边距 */\n"
-                                     
-                                      "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font: 14pt \"AcadEref\";\n"
+"}")
         self.comboBox_7.setObjectName("comboBox_7")
         self.gridLayout_6.addWidget(self.comboBox_7, 1, 3, 1, 1)
         self.comboBox_8 = QtWidgets.QComboBox(self.data)
         self.comboBox_8.setStyleSheet("QWidget {\n"
-                                      "    background-color: rgba(229, 229, 229, 180); \n"
-                                      "    border: 1px solid #ccc; /* 边框 */\n"
-                                      "    border-radius: 10px; /* 圆角半径 */\n"
-                                      "    padding: 5px; /* 内边距 */\n"
-                                     
-                                      "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 5px; /* 内边距 */\n"
+"    font: 14pt \"AcadEref\";\n"
+"}")
         self.comboBox_8.setObjectName("comboBox_8")
         self.gridLayout_6.addWidget(self.comboBox_8, 2, 3, 1, 1)
         self.gridLayout_5.addLayout(self.gridLayout_6, 3, 5, 1, 1)
         self.label_13 = QtWidgets.QLabel(self.data)
         self.label_13.setStyleSheet("font: 12pt \"黑体\";\n"
-                                    "border-radius: 5px; /* 圆角 */\n"
-                                    "background-color: rgba(113, 113, 113, 100);")
+"border-radius: 5px; /* 圆角 */\n"
+"background-color: rgba(113, 113, 113, 100);")
         self.label_13.setObjectName("label_13")
         self.gridLayout_5.addWidget(self.label_13, 1, 2, 1, 1)
         self.gridLayout_5.setColumnStretch(0, 1)
@@ -675,46 +684,46 @@ class Ui_MainWindow(object):
         self.gridLayout_4.addWidget(self.label_5, 0, 0, 1, 1)
         self.lineEdit_3 = QtWidgets.QLineEdit(self.search)
         self.lineEdit_3.setStyleSheet("QWidget {\n"
-                                      "    background-color: rgba(229, 229, 229, 180); \n"
-                                      "    border: 1px solid #ccc; /* 边框 */\n"
-                                      "    border-radius: 10px; /* 圆角半径 */\n"
-                                      "    padding: 10px; /* 内边距 */\n"
-                                      "    font: 75 12pt \"Microsoft YaHei UI\";\n"
-                                      "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 10px; /* 内边距 */\n"
+"    font: 75 12pt \"Microsoft YaHei UI\";\n"
+"}")
         self.lineEdit_3.setObjectName("lineEdit_3")
         self.gridLayout_4.addWidget(self.lineEdit_3, 0, 1, 1, 1)
         self.pushButton_9 = QtWidgets.QPushButton(self.search)
         self.pushButton_9.setStyleSheet("QPushButton {\n"
-                                        "    background-color: rgba(167, 162, 157,100);\n"
-                                        "    border: none; /* 无边框 */\n"
-                                        "    padding: 10px 20px; /* 内边距 */\n"
-                                        "    text-align: center;\n"
-                                        "    text-decoration: none;\n"
-                                        "    font: 16pt \"黑体\";\n"
-                                        "    margin: 4px 2px;\n"
-                                        "    cursor: pointer;\n"
-                                        "    border-radius: 10px; /* 圆角 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                        "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 16pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         self.pushButton_9.setIcon(icon2)
         self.pushButton_9.setIconSize(QtCore.QSize(40, 30))
         self.pushButton_9.setObjectName("pushButton_9")
         self.gridLayout_4.addWidget(self.pushButton_9, 0, 2, 1, 1)
         self.textBrowser_3 = QtWidgets.QTextBrowser(self.search)
         self.textBrowser_3.setStyleSheet("QWidget {\n"
-                                         "    background-color: rgba(229, 229, 229, 180); \n"
-                                         "    border: 1px solid #ccc; /* 边框 */\n"
-                                         "    border-radius: 10px; /* 圆角半径 */\n"
-                                         "    padding: 10px; /* 内边距 */\n"
-                                         "    font: 75 14pt \"Microsoft YaHei \";\n"
-                                         "}")
+"    background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 10px; /* 内边距 */\n"
+"    font: 75 12pt \"Microsoft YaHei UI\";\n"
+"}")
         self.textBrowser_3.setObjectName("textBrowser_3")
         self.gridLayout_4.addWidget(self.textBrowser_3, 1, 0, 1, 3)
         self.verticalLayout_3.addLayout(self.gridLayout_4)
@@ -724,11 +733,11 @@ class Ui_MainWindow(object):
         self.lineEdit_4 = QtWidgets.QLineEdit(self.login)
         self.lineEdit_4.setGeometry(QtCore.QRect(170, 30, 171, 41))
         self.lineEdit_4.setStyleSheet("QWidget {\n"
-                                      "      background-color: rgba(229, 229, 229, 180); \n"
-                                      "    border: 1px solid #ccc; /* 边框 */\n"
-                                      "    border-radius: 10px; /* 圆角半径 */\n"
-                                      "    padding: 10px; /* 内边距 */\n"
-                                      "}")
+"      background-color: rgba(229, 229, 229, 180); \n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 10px; /* 内边距 */\n"
+"}")
         self.lineEdit_4.setObjectName("lineEdit_4")
         self.label_15 = QtWidgets.QLabel(self.login)
         self.label_15.setGeometry(QtCore.QRect(50, 80, 111, 40))
@@ -737,12 +746,12 @@ class Ui_MainWindow(object):
         self.lineEdit_5 = QtWidgets.QLineEdit(self.login)
         self.lineEdit_5.setGeometry(QtCore.QRect(170, 80, 171, 41))
         self.lineEdit_5.setStyleSheet("QWidget {\n"
-                                      "    background-color: rgba(229, 229, 229, 180); /* 背景颜色 */\n"
-                                      "    border: 1px solid #ccc; /* 边框 */\n"
-                                      "    border-radius: 10px; /* 圆角半径 */\n"
-                                      "    padding: 10px; /* 内边距 */\n"
-                                      "\n"
-                                      "}")
+"    background-color: rgba(229, 229, 229, 180); /* 背景颜色 */\n"
+"    border: 1px solid #ccc; /* 边框 */\n"
+"    border-radius: 10px; /* 圆角半径 */\n"
+"    padding: 10px; /* 内边距 */\n"
+"\n"
+"}")
         self.lineEdit_5.setObjectName("lineEdit_5")
         self.label_16 = QtWidgets.QLabel(self.login)
         self.label_16.setGeometry(QtCore.QRect(50, 30, 111, 40))
@@ -751,51 +760,51 @@ class Ui_MainWindow(object):
         self.pushButton_13 = QtWidgets.QPushButton(self.login)
         self.pushButton_13.setGeometry(QtCore.QRect(80, 150, 121, 51))
         self.pushButton_13.setStyleSheet("QPushButton {\n"
-                                         "    background-color: rgba(167, 162, 157,100);\n"
-                                         "    border: none; /* 无边框 */\n"
-                                         "    padding: 10px 20px; /* 内边距 */\n"
-                                         "    text-align: center;\n"
-                                         "    text-decoration: none;\n"
-                                         "    font: 12pt \"黑体\";\n"
-                                         "    margin: 4px 2px;\n"
-                                         "    cursor: pointer;\n"
-                                         "    border-radius: 10px; /* 圆角 */\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:hover {\n"
-                                         "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:pressed {\n"
-                                         "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                         "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 12pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         icon11 = QtGui.QIcon()
-        icon11.addPixmap(QtGui.QPixmap("pic/op_png/ok.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon11.addPixmap(QtGui.QPixmap("C:/Users/33974/.designer/backup/pic/op_png/ok.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_13.setIcon(icon11)
         self.pushButton_13.setObjectName("pushButton_13")
         self.pushButton_14 = QtWidgets.QPushButton(self.login)
         self.pushButton_14.setGeometry(QtCore.QRect(220, 150, 121, 51))
         self.pushButton_14.setStyleSheet("QPushButton {\n"
-                                         "    background-color: rgba(167, 162, 157,100);\n"
-                                         "    border: none; /* 无边框 */\n"
-                                         "    padding: 10px 20px; /* 内边距 */\n"
-                                         "    text-align: center;\n"
-                                         "    text-decoration: none;\n"
-                                         "    font: 12pt \"黑体\";\n"
-                                         "    margin: 4px 2px;\n"
-                                         "    cursor: pointer;\n"
-                                         "    border-radius: 10px; /* 圆角 */\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:hover {\n"
-                                         "    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
-                                         "}\n"
-                                         "\n"
-                                         "QPushButton:pressed {\n"
-                                         "    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
-                                         "}")
+"    background-color: rgba(167, 162, 157,100);\n"
+"    border: none; /* 无边框 */\n"
+"    padding: 10px 20px; /* 内边距 */\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    font: 12pt \"黑体\";\n"
+"    margin: 4px 2px;\n"
+"    cursor: pointer;\n"
+"    border-radius: 10px; /* 圆角 */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(55, 55, 55,80); /* 鼠标悬停时颜色变化 */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(17, 12, 17,80); /* 按下时颜色变化 */\n"
+"}")
         icon12 = QtGui.QIcon()
-        icon12.addPixmap(QtGui.QPixmap("pic/op_png/mtiIcon-caozuo-quxiao.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon12.addPixmap(QtGui.QPixmap("C:/Users/33974/.designer/backup/pic/op_png/mtiIcon-caozuo-quxiao.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_14.setIcon(icon12)
         self.pushButton_14.setObjectName("pushButton_14")
         self.login_info = QtWidgets.QLabel(self.login)
@@ -851,16 +860,30 @@ class Ui_MainWindow(object):
         self.comboBox_2.setItemText(1, _translate("MainWindow", "收入"))
         self.comboBox_2.setItemText(2, _translate("MainWindow", "停车时长"))
         self.comboBox.setItemText(0, _translate("MainWindow", "折线图"))
-        self.comboBox.setItemText(1, _translate("MainWindow", "柱形图"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "饼状图"))
+        self.comboBox.setItemText(2, _translate("MainWindow", "柱形图"))
         self.pushButton_11.setText(_translate("MainWindow", "预览"))
         self.pushButton_12.setText(_translate("MainWindow", "导出"))
         self.label_8.setText(_translate("MainWindow", "纵轴间隔"))
-        self.label_7.setText(_translate("MainWindow", "横轴间隔"))
+        self.label_7.setText(_translate("MainWindow", "时间间隔"))
+        self.comboBox_3.setItemText(0, _translate("MainWindow", "1小时"))
+        self.comboBox_3.setItemText(1, _translate("MainWindow", "3小时"))
+        self.comboBox_3.setItemText(2, _translate("MainWindow", "5小时"))
+        self.comboBox_3.setItemText(3, _translate("MainWindow", "7小时"))
+        self.comboBox_3.setItemText(4, _translate("MainWindow", "10小时"))
+        self.comboBox_3.setItemText(5, _translate("MainWindow", "12小时"))
+        self.comboBox_3.setItemText(6, _translate("MainWindow", "24小时"))
+        self.comboBox_3.setItemText(7, _translate("MainWindow", "3天"))
+        self.comboBox_3.setItemText(8, _translate("MainWindow", "5天"))
+        self.comboBox_3.setItemText(9, _translate("MainWindow", "10天"))
         self.label_9.setText(_translate("MainWindow", "颜    色"))
-        self.label_10.setText(_translate("MainWindow", "test1"))
-        self.label_11.setText(_translate("MainWindow", "test2"))
+        self.label_10.setText(_translate("MainWindow", "图片长"))
+        self.comboBox_5.setItemText(0, _translate("MainWindow", "红色"))
+        self.comboBox_5.setItemText(1, _translate("MainWindow", "蓝色"))
+        self.comboBox_5.setItemText(2, _translate("MainWindow", "黑色"))
+        self.label_11.setText(_translate("MainWindow", "图片宽"))
         self.label_12.setText(_translate("MainWindow", "test3"))
-        self.label_13.setText(_translate("MainWindow", " ->到->"))
+        self.label_13.setText(_translate("MainWindow", "到"))
         self.label_5.setText(_translate("MainWindow", "车牌号:"))
         self.pushButton_9.setText(_translate("MainWindow", "查询"))
         self.label_15.setText(_translate("MainWindow", "管理员密码："))
@@ -868,6 +891,3 @@ class Ui_MainWindow(object):
         self.pushButton_13.setText(_translate("MainWindow", "登录"))
         self.pushButton_14.setText(_translate("MainWindow", "取消"))
         self.login_info.setText(_translate("MainWindow", "登入管理员账户以生成数据报表"))
-
-
-import button_rc

@@ -26,16 +26,16 @@ conn.commit()
 
 # 生成停车记录
 start_date = datetime(2024, 10, 1)
-end_date = datetime(2024, 10, 5)
+end_date = datetime(2024, 10, 2)
 
 # 生成随机停车记录
 parking_records = []
-for i in range(100):  # 生成 100 条记录
+for i in range(30):  # 生成 300 条记录
     vehicle_id = random.randint(1, len(vehicles_data))
-    start_time = start_date + timedelta(minutes=random.randint(0, 24 * 60 * 4))
-    end_time = start_time + timedelta(minutes=random.randint(1, 120))
+    start_time = start_date + timedelta(hours=random.randint(0, 24 * 6))
+    end_time = start_time + timedelta(hours=random.randint(1, 24))
     duration = str(end_time - start_time)
-    fee = round(random.uniform(0.01, 10.00), 2)
+    fee = round(random.uniform(0.01, 100.00), 2)
 
     parking_records.append((vehicle_id, start_time, end_time, duration, fee))
 

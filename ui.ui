@@ -664,6 +664,11 @@ QPushButton:pressed {
                </item>
                <item>
                 <property name="text">
+                 <string>饼状图</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
                  <string>柱形图</string>
                 </property>
                </item>
@@ -884,7 +889,7 @@ QCalendarWidget QTableView {
                <item row="0" column="0">
                 <widget class="QLabel" name="label_7">
                  <property name="text">
-                  <string>横轴间隔</string>
+                  <string>时间间隔</string>
                  </property>
                 </widget>
                </item>
@@ -908,6 +913,56 @@ QCalendarWidget QTableView {
                    <height>20</height>
                   </size>
                  </property>
+                 <item>
+                  <property name="text">
+                   <string>1小时</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>3小时</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>5小时</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>7小时</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>10小时</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12小时</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>24小时</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>3天</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>5天</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>10天</string>
+                  </property>
+                 </item>
                 </widget>
                </item>
                <item row="2" column="0">
@@ -920,7 +975,7 @@ QCalendarWidget QTableView {
                <item row="0" column="2">
                 <widget class="QLabel" name="label_10">
                  <property name="text">
-                  <string>test1</string>
+                  <string>图片长</string>
                  </property>
                 </widget>
                </item>
@@ -935,6 +990,21 @@ QCalendarWidget QTableView {
 	font: 14pt &quot;AcadEref&quot;;
 }</string>
                  </property>
+                 <item>
+                  <property name="text">
+                   <string>红色</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>蓝色</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>黑色</string>
+                  </property>
+                 </item>
                 </widget>
                </item>
                <item row="0" column="3">
@@ -953,7 +1023,7 @@ QCalendarWidget QTableView {
                <item row="1" column="2">
                 <widget class="QLabel" name="label_11">
                  <property name="text">
-                  <string>test2</string>
+                  <string>图片宽</string>
                  </property>
                 </widget>
                </item>

@@ -4,12 +4,16 @@ import time
 import uuid
 
 import os
+from datetime import datetime
+
 import ui as m
 import numpy as np
 import database_service as d
 import qrcode
 import parking_lot
-
+import date_anly as d_a
+import tkinter as tk
+from tkinter import messagebox
 from PyQt5.QtWidgets import QMainWindow, QApplication, QTableWidgetItem
 from qdarkstyle import load_stylesheet_pyqt5
 from prettytable import PrettyTable
@@ -25,6 +29,8 @@ class APP(QMainWindow, m.Ui_MainWindow):
         self.parking_lot_num = np.zeros((30, 30), dtype=object)
         self.parking_lot_num.fill(0)
         self.final_parking_fee = 0
+        self.admin = False
+
         self.pattern = r'^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-Z0-9]{4,6}$'
 
         # ------------------page_btu---------------------- #
@@ -32,6 +38,7 @@ class APP(QMainWindow, m.Ui_MainWindow):
         self.search_page_btu = self.ui.pushButton_6
         self.parking_page_btu = self.ui.pushButton_10
         self.data_page_btu = self.ui.pushButton_5
+        self.data_page_btu.setEnabled(False)
         self.setting_page_btu = self.ui.pushButton_2
         self.login_page_btu = self.ui.pushButton
         # ------------------------------------------------ #
@@ -97,6 +104,11 @@ class APP(QMainWindow, m.Ui_MainWindow):
 
         # ------------------other----------------------------------------------- #
         self.theme_box = self.ui.comboBox_10  # 主题选择框
+        # ------------------------------------------------------------------- #
+        self.calender = self.ui.calendarWidget  # 日历选择
+        # ------------------data----------------------------------------------- #
+        self.data_analy_review_btu = self.ui.pushButton_11
+        self.data_analy_deduced_btu = self.ui.pushButton_12
 
     def solt(self):  # 槽函数
         # ------------------page----------------------------------------------- #
@@ -121,6 +133,35 @@ class APP(QMainWindow, m.Ui_MainWindow):
         self.theme_box.currentTextChanged.connect(self.change_theme)  # 主题切换
         # ------------------qrcode-------------------------------------------- #
         self.refresh_qr_code.clicked.connect(lambda: self.generate_alipay_qr_code(self.final_parking_fee))
+        # ------------------login---------------------------------------------- #
+        self.confirm_login_btu.clicked.connect(self.login)
+        self.cancel_login_btu.clicked.connect(self.clear_login_info)
+        # ------------------data_analy---------------------------------------- #
+        self.data_analy_review_btu.clicked.connect(self.generate_report)
+
+    def login(self):
+        try:
+            print("登录")
+            username = self.username_input_txt.text()
+            password = self.password_input_txt.text()
+            if not username or not password:
+                self.login_result_txt.setText("账号或密码为空")
+                return
+            if username == "admin" and password == "admin":
+                self.login_result_txt.setText("登录成功")
+                print("登录成功")
+                self.admin = True
+                self.data_page_btu.setEnabled(True)
+            else:
+                self.login_result_txt.setText("登录失败")
+                print("登录失败")
+                self.data_page_btu.setEnabled(False)
+        except Exception as e:
+            print(e)
+
+    def clear_login_info(self):
+        self.username_input_txt.clear()
+        self.password_input_txt.clear()
 
     def add_vehicle(self):  # 添加车辆
         self.car_id = self.car_id_in_input_txt.text()
@@ -298,9 +339,6 @@ class APP(QMainWindow, m.Ui_MainWindow):
         else:
             print("释放失败")
 
-    def login(self):  # 权限设置
-        pass
-
     def rebate(self):  # 优惠设置
         pass
 
@@ -315,9 +353,72 @@ class APP(QMainWindow, m.Ui_MainWindow):
             pass
 
     def generate_report(self):  # 生成报表
-        # todo
-        pass
+        self.data_a = d_a.parking_data()
+        chart_type = self.ui.comboBox.currentText()  # 报告类型选择框
+        chart_data = self.ui.comboBox_2.currentText()  # 报告数据选择框
+        print(chart_type,
+              chart_data)
+        # 获取开始时间和结束时间
+        start_time_str = self.ui.dateTimeEdit.dateTime().toString("yyyy-MM-dd hh:mm:ss")
+        end_time_str = self.ui.dateTimeEdit_2.dateTime().toString("yyyy-MM-dd hh:mm:ss")
+        start_time = datetime.strptime(start_time_str, "%Y-%m-%d %H:%M:%S")
+        end_time = datetime.strptime(end_time_str, "%Y-%m-%d %H:%M:%S")
+        interval_str = self.ui.comboBox_3.currentText()
 
+        try:
+            match interval_str:
+                case "1小时":
+                    self.interval = 1
+                case "3小时":
+                    self.interval = 3
+                case "5小时":
+                    self.interval = 5
+                case "7小时":
+                    self.interval = 7
+                case "10小时":
+                    self.interval = 10
+                case "12小时":
+                    self.interval = 12
+                case "24小时":
+                    self.interval = 24
+                case "3天":
+                    self.interval = 72
+                case "5天":
+                    self.interval = 120
+                case "10天":
+                    self.interval = 240
+                case _:
+                    self.interval = 0
+        except ValueError:
+            self.show_message("有错误！")
+            return
+        try:
+            match chart_type:
+                case "饼状图":
+                    self.test_chart_type = "pie"
+                case "柱状图":
+                    self.test_chart_type = "bar"
+                case "折线图":
+                    self.test_chart_type = "line"
+                case _:
+                    self.test_chart_type = "pie"
+        except ValueError:
+            self.show_message("有错误！")
+            return
+        print("interval:", self.interval)
+        if self.interval <= ((end_time - start_time).total_seconds())/3600 and chart_data == "收入":
+            print(((end_time - start_time).total_seconds())/3600)
+            self.data_a.read_fee_from_parking(str(start_time), str(end_time), self.interval)
+            self.data_a.generate_parking_fee_chart(self.test_chart_type, (4, 4), "fee_chart.png")
+
+        else:
+            self.show_message("时间间隔不合理，请检查您的输入！")
+        print(start_time, end_time, self.interval)
+
+    def show_message(self, message):
+        root = tk.Tk()
+        root.withdraw()  # 隐藏主窗口
+        messagebox.showinfo("提示", message)
     def generate_alipay_qr_code(self, amount):
         """
         生成支付宝付款二维码图片。
