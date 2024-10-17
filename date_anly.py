@@ -9,9 +9,9 @@ from pyqtgraph.canvas import Canvas
 class parking_data:
     def __init__(self):
         self.dis_fee = None
+        self.dis_time = None
 
-
-    def read_time_from_parking(self, time_start, time_end, time_interval):
+    def read_time_from_parking(self, time_start, time_end, time_interval) -> dict:
         """
         从数据库中读取停车时间，并按给定的时间间隔统计停车时长分布
         :param time_start: 开始时间字符串，格式为 "YYYY-MM-DD HH:MM:SS"
@@ -59,9 +59,9 @@ class parking_data:
                         break
 
         # 返回统计结果
-        self.dis = distribution
+        self.dis_time = self.filter_result(self.merge_zero_intervals(distribution))
 
-    def read_number_from_parking(self) -> list:
+    def read_number_from_parking(self, time_start, time_end, time_interval):
         """
         从数据库中读取停车数量
         :return:
@@ -112,7 +112,7 @@ class parking_data:
                         break
 
         # 返回统计结果
-        self.dis_fee = distribution
+        self.dis_fee = self.filter_result(self.merge_zero_intervals(distribution))
 
     def merge_zero_intervals(self, distribution):
         """
@@ -125,21 +125,24 @@ class parking_data:
         current_sum = 0
 
         keys = list(distribution.keys())
-        for i, key in enumerate(keys):
-            value = distribution[key]
-            if value == 0:
-                if current_start is None:
-                    current_start = key
-                current_sum += 1
-            else:
-                if current_start is not None:
-                    start, _ = current_start.split('-')
-                    start = int(start[:-1])
-                    end = int(current_start.split('-')[1][:-1])
-                    merged_distribution['{}-{}h'.format(start, end)] = 0
-                    current_start = None
-                    current_sum = 0
-                merged_distribution[key] = value
+        try:
+            for i, key in enumerate(keys):
+                value = distribution[key]
+                if value == 0:
+                    if current_start is None:
+                        current_start = key
+                    current_sum += 1
+                else:
+                    if current_start is not None:
+                        start, _ = current_start.split('-')
+                        start = int(start[:-1])
+                        end = int(current_start.split('-')[1][:-1])
+                        merged_distribution['{}-{}h'.format(start, end)] = 0
+                        current_start = None
+                        current_sum = 0
+                    merged_distribution[key] = value
+        except Exception:
+            print("merge_zero_intervals error")
         # 不处理，连续的0区间直接裁撤
         # # 处理最后一个连续的零值区间
         # if current_start is not None:
@@ -166,15 +169,16 @@ class parking_data:
         filtered_result = {key: value for key, value in result.items() if key not in exclude_keys}
         return filtered_result
 
-    def generate_parking_time_chart(self, chart_type, figsize=(8, 8)):
+    def generate_parking_time_chart(self, chart_type, figsize=(8, 8), filename=None):
         """
         生成饼状图或折线图
+        :param filename: 名字
         :param chart_type: 图表类型，'pie' 或 'line'
         :param figsize: 图表大小，默认为 (8, 8)
         """
         plt.figure(figsize=figsize)
-        labels = list(self.dis.keys())
-        values = list(self.dis.values())
+        labels = list(self.dis_time.keys())
+        values = list(self.dis_time.values())
 
         if chart_type == 'pie':
             plt.pie(values, labels=labels, autopct='%1.1f%%', startangle=140)
@@ -195,10 +199,12 @@ class parking_data:
             plt.xticks(rotation=45)  # 旋转 x 轴标签
             plt.grid(axis='y')
         else:
-            raise ValueError("Invalid chart type. Use 'pie' or 'line'.")
+            pass
 
         plt.tight_layout()  # 自动调整布局
-        plt.show()
+        if filename:
+            plt.savefig(filename)  # 保存图表到文件
+        plt.close()  # 关闭图形窗口
 
     def generate_parking_fee_chart(self, chart_type, figsize=(8, 8), filename=None):
         """
@@ -224,13 +230,18 @@ class parking_data:
             plt.xlabel('Fee Interval')
             plt.ylabel('Count')
             plt.title('Parking Fee Distribution (Bar Chart)')
+        else:
+            pass
 
         plt.tight_layout()  # 自动调整布局
 
         if filename:
             plt.savefig(filename)  # 保存图表到文件
-        plt.show()  # 显示图表
         plt.close()  # 关闭图形窗口
+
+    def generate_parking_number_chart(self, chart_type, figsize=(8, 8), filename=None):
+        pass
+
 
 
 if __name__ == '__main__':

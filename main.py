@@ -6,6 +6,8 @@ import uuid
 import os
 from datetime import datetime
 
+from PyQt5.QtCore import Qt, QDate
+
 import ui as m
 import numpy as np
 import database_service as d
@@ -14,7 +16,7 @@ import parking_lot
 import date_anly as d_a
 import tkinter as tk
 from tkinter import messagebox
-from PyQt5.QtWidgets import QMainWindow, QApplication, QTableWidgetItem
+from PyQt5.QtWidgets import QMainWindow, QApplication, QTableWidgetItem, QFileDialog
 from qdarkstyle import load_stylesheet_pyqt5
 from prettytable import PrettyTable
 from PyQt5.QtGui import QPixmap
@@ -107,8 +109,12 @@ class APP(QMainWindow, m.Ui_MainWindow):
         # ------------------------------------------------------------------- #
         self.calender = self.ui.calendarWidget  # 日历选择
         # ------------------data----------------------------------------------- #
-        self.data_analy_review_btu = self.ui.pushButton_11
-        self.data_analy_deduced_btu = self.ui.pushButton_12
+        self.data_analy_review_btu = self.ui.pushButton_11  # 预览按钮
+        self.data_analy_deduced_btu = self.ui.pushButton_12  # 保存按钮
+        self.start_date_input_txt = self.ui.dateTimeEdit
+        self.end_date_input_txt = self.ui.dateTimeEdit_2
+        self.start_date_input_txt.setDate(QDate.currentDate())
+        self.end_date_input_txt.setDate(QDate.currentDate())
 
     def solt(self):  # 槽函数
         # ------------------page----------------------------------------------- #
@@ -138,6 +144,7 @@ class APP(QMainWindow, m.Ui_MainWindow):
         self.cancel_login_btu.clicked.connect(self.clear_login_info)
         # ------------------data_analy---------------------------------------- #
         self.data_analy_review_btu.clicked.connect(self.generate_report)
+        self.data_analy_deduced_btu.clicked.connect(self.save_report)
 
     def login(self):
         try:
@@ -393,10 +400,11 @@ class APP(QMainWindow, m.Ui_MainWindow):
             self.show_message("有错误！")
             return
         try:
+            print("chart_type:", chart_type)
             match chart_type:
                 case "饼状图":
                     self.test_chart_type = "pie"
-                case "柱状图":
+                case "柱形图":
                     self.test_chart_type = "bar"
                 case "折线图":
                     self.test_chart_type = "line"
@@ -406,19 +414,47 @@ class APP(QMainWindow, m.Ui_MainWindow):
             self.show_message("有错误！")
             return
         print("interval:", self.interval)
-        if self.interval <= ((end_time - start_time).total_seconds())/3600 and chart_data == "收入":
-            print(((end_time - start_time).total_seconds())/3600)
-            self.data_a.read_fee_from_parking(str(start_time), str(end_time), self.interval)
-            self.data_a.generate_parking_fee_chart(self.test_chart_type, (4, 4), "fee_chart.png")
+        if self.interval <= ((end_time - start_time).total_seconds()) / 3600:
+            print(((end_time - start_time).total_seconds()) / 3600)
+            if chart_data == "收入":
+                self.data_a.read_fee_from_parking(str(start_time), str(end_time), self.interval)
+                self.data_a.generate_parking_fee_chart(self.test_chart_type, (6, 5), f"fee_{self.test_chart_type}chart.png")
+                self.ui.label_6.setPixmap(QPixmap(f"fee_{self.test_chart_type}chart.png"))
+                self.ui.label_6.setAlignment(Qt.AlignCenter)
+            elif chart_data == "停车时长":
+                self.data_a.read_time_from_parking(str(start_time), str(end_time), self.interval)
+                self.data_a.generate_parking_time_chart(self.test_chart_type, (6, 5),f"time_{self.test_chart_type}chart.png")
+                self.ui.label_6.setPixmap(QPixmap(f"time_{self.test_chart_type}chart.png"))
+                self.ui.label_6.setAlignment(Qt.AlignCenter)
+            elif chart_data == "停车数量":
+                self.data_a.read_number_from_parking(str(start_time), str(end_time), self.interval)
+                self.data_a.generate_parking_number_chart(self.test_chart_type, (6, 5),f"number_{self.test_chart_type}chart.png")
+                self.ui.label_6.setPixmap(QPixmap(f"number_{self.test_chart_type}chart.png"))
+                self.ui.label_6.setAlignment(Qt.AlignCenter)
+
 
         else:
             self.show_message("时间间隔不合理，请检查您的输入！")
         print(start_time, end_time, self.interval)
 
+    def save_report(self):
+        options = QFileDialog.Options()
+        file_path, _ = QFileDialog.getSaveFileName(self, "保存图片", "", "PNG Files (*.png);;All Files (*)",
+                                                   options=options)
+
+        if file_path:
+            self.data_a.generate_parking_fee_chart(self.test_chart_type, (6, 5), file_path)
+            self.ui.label_6.setPixmap(QPixmap(file_path))
+            self.ui.label_6.setAlignment(Qt.AlignCenter)
+        else:
+            print("用户取消了保存操作")
+
+
     def show_message(self, message):
         root = tk.Tk()
         root.withdraw()  # 隐藏主窗口
         messagebox.showinfo("提示", message)
+
     def generate_alipay_qr_code(self, amount):
         """
         生成支付宝付款二维码图片。
